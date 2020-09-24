@@ -1,0 +1,75 @@
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+/* colors */
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* shapes */
+.circle {
+    width: 1000px; 
+    height: 1000px; 
+    border-radius: 50%;
+}
+
+.square {
+    width: 100px; 
+    height: 100px; 
+}
+
+.rectangle {
+    width: 40vw; 
+    height: 10vh; 
+    top: 50vh;
+    left: 30vw;
+}
+
+.rectangle:hover{
+    transform: rotate(45deg) skew(10deg);
+}
+
+.ellipse {
+    width: 30vw; 
+    height: 20vw; 
+    top: 10vh;
+    left: 50vw;
+    border-radius: 50%;
+}
+
+
+/* modifiers */
+.round-corners {
+    border-radius: 20%;
+}
+
+.first-element{
+    background-color: greenyellow;
+    width: 100vw;
+    height: 2vh;
+    top: 50vh;
+    animation: scale 3s infinite normal;
+}
+
+
+@keyframes scale {
+    from {
+        width: 10vw;
+    } to {
+        width: 40vw;
+    }
+}
